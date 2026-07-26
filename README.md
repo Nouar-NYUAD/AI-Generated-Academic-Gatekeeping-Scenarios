@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
-This repository contains the dataset, experiment code, and evaluation logs for the paper:
+This repository contains the experiment dataset for the paper:
 
 > **Who Gets Access? Global Region and Academic Status Bias in AI-Generated Academic Gatekeeping Scenarios**
 
@@ -11,13 +11,13 @@ This repository contains the dataset, experiment code, and evaluation logs for t
 
 ## 📌 Overview
 
-As Large Language Models (LLMs) are increasingly integrated into administrative and evaluative workflows, understanding their decision-making biases in academic gatekeeping scenarios is critical. This study investigates whether popular open-weight and proprietary LLMs exhibit systemic biases based on **geographic region** (Global North vs. Global South) and **academic status** (e.g., Professor, Postdoc, PhD candidate, Independent Scholar) when making resource access and gatekeeping choices.
+As Large Language Models (LLMs) are increasingly integrated into administrative and evaluative workflows, understanding their decision-making biases in academic gatekeeping scenarios is critical. This study investigates whether popular open-weight and proprietary LLMs exhibit systemic biases based on **geographic region** (Global North vs. Global South) and **academic status** (e.g., Tenured Professor, Postdoc Researcher, PhD candidate, Undergraduate Students) when making resource access and gatekeeping choices.
 
 ### Evaluated Models
-- **Meta:** LLaMA 3 / 3.1 (8B)
-- **Google:** Gemini, Gemma 3
-- **Anthropic:** Claude Series
-- **OpenAI:** GPT Models (e.g., GPT-4o, GPT-3.5)
+- **Meta:**  Llama 3.1-8B
+- **Google:** Gemini 2.5 Pro, Gemma-3n-2B
+- **Anthropic:** Claude Sonnet 3.
+- **OpenAI:** GPT-4o 
 
 ---
 
@@ -25,20 +25,13 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 
 ```text
 .
-├── data/
-│   ├── country_classification/
-│   │   └── global_north_south.zip   # Country classifications into Global North vs. Global South by LLMs
-│   │
-│   ├── llm_selections/
-│   │   ├── access_scenarios.zip     # LLM selection of countries for each access scenario
-│   │   └── academic_status.zip      # LLM selections across different academic status levels
-│   │
-│   └── prompts/                     # Prompt templates used for gatekeeping decision experiments
-│
-├── notebooks/                       # Exploratory data analysis & plot generation
-├── src/                             # Processing, execution, and evaluation scripts
-├── README.md
-└── requirements.txt
+├── llama8b.zip     # LlaMa selection for each access scenario, academic status levels, and countries.
+│── gemma3.zip      # Gemma-3 selection for each access scenario, academic status levels, and countries.
+│── claude.zip      # Claude selection for each access scenario, academic status levels, and countries.    
+│── gemini.zip      # Gemini selection for each access scenario, academic status levels, and countries.
+│── gpt.zip         # GPT selection for each access scenario, academic status levels, and countries.
+├── classify_country.zip      # Country classifications by LLMs into Global North vs. Global South by LLMs
+└── README.md
 ```
 
 ---
@@ -63,27 +56,10 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 Clone the repository and install required Python packages:
 
 ```bash
-git clone https://github.com/your-username/academic-gatekeeping-llm-bias.git
-cd academic-gatekeeping-llm-bias
-pip install -r requirements.txt
+git clone https://github.com/Nouar-NYUAD/AI-Generated-Academic-Gatekeeping-Scenarios.git
+cd AI-Generated-Academic-Gatekeeping-Scenarios
 ```
 
-### Unpacking Datasets
-
-You can unpack all dataset archives automatically using Python:
-
-```python
-import zipfile
-import glob
-import os
-
-zip_files = glob.glob("data/**/*.zip", recursive=True)
-for zip_path in zip_files:
-    extract_dir = os.path.splitext(zip_path)[0]
-    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-        zip_ref.extractall(extract_dir)
-    print(f"Extracted: {zip_path} -> {extract_dir}")
-```
 
 ---
 
