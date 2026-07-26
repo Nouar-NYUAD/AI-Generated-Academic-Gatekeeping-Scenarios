@@ -11,7 +11,7 @@ This repository contains the experiment dataset for the paper:
 
 ## 📌 Overview
 
-As Large Language Models (LLMs) are increasingly integrated into administrative and evaluative workflows, understanding their decision-making biases in academic gatekeeping scenarios is critical. This study investigates whether popular open-weight and proprietary LLMs exhibit systemic biases based on **geographic region** (Global North vs. Global South) and **academic status** (e.g., Tenured Professor, Postdoc Researcher, PhD candidate, Undergraduate Students) when making resource access and gatekeeping choices.
+As Large Language Models (LLMs) are increasingly integrated into administrative and evaluative workflows, understanding their decision-making biases in academic gatekeeping scenarios (CVs sharing, Paywalled Articles, nonpublic Data) is critical. This study investigates whether popular open-weight and proprietary LLMs exhibit systemic biases based on **geographic region** (Global North vs. Global South) and **academic status** (e.g., Tenured Professor, Postdoc Researcher, PhD candidate, Undergraduate Students) when making resource access and gatekeeping choices.
 
 ### Evaluated Models
 - **Meta:**  Llama 3.1-8B
@@ -25,11 +25,12 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 
 ```text
 .
-├── llama8b.zip     # LlaMa selection for each access scenario, academic status levels, and countries.
-│── gemma3.zip      # Gemma-3 selection for each access scenario, academic status levels, and countries.
-│── claude.zip      # Claude selection for each access scenario, academic status levels, and countries.    
-│── gemini.zip      # Gemini selection for each access scenario, academic status levels, and countries.
-│── gpt.zip         # GPT selection for each access scenario, academic status levels, and countries.
+├── llama8b.zip               # LlaMa selection of countries belonging to Global South or Global North for each access scenario and academic status.
+│── gemma3.zip                # Gemma-3 selection of countries belonging to Global South or Global North for each access scenario and academic status.
+│── claude.zip                # Claude selection of countries belonging to Global South or Global North for each access scenario and academic status.    
+│── gemini.zip                # Gemini selection of countries belonging to Global South or Global North for each access scenario and academic status.
+│── gpt.zip                   # GPT selection of countries belonging to Global South or Global North for each access scenario and academic status.
+│── academic_status.zip       # LLMs selection of academic status for each access scenario and country.
 ├── classify_country.zip      # Country classifications by LLMs into Global North vs. Global South by LLMs
 └── README.md
 ```
@@ -38,14 +39,17 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 
 ## 📊 Datasets
 
-1. **Country Classification (`data/country_classification/`)**
+1. **Country Classification**
    - Contains zipped data mapping how each LLM categorizes countries into Global South and Global North classifications.
 
-2. **Access Scenarios Selections (`data/llm_selections/access_scenarios.zip`)**
-   - Records of LLM selection choices across various academic gatekeeping scenarios (e.g., funding grants, compute allocation, conference sponsorship, journal reviews).
+2. **Access Scenarios Selections**
+   - Records of LLM selection choices across various academic gatekeeping scenarios (e.g., CVs sharing, Paywalled Articles, nonpublic Data).
 
-3. **Academic Status Selections (`data/llm_selections/academic_status.zip`)**
-   - Data detailing model selection outcomes conditioned on academic rank and institutional status (e.g., Senior Faculty vs. Early Career vs. Independent Researcher).
+3. **Academic Status Selections**
+    - Records of LLM selection choices across various academic seniorities (e.g.,  Tenured Professor, Postdoc Researcher, PhD candidate, Undergraduate Students).
+  
+3. **Global Region Selections**
+    - Records of LLM selection choices across various countries belonging to Global South or Global North.
 
 ---
 
@@ -68,10 +72,10 @@ cd AI-Generated-Academic-Gatekeeping-Scenarios
 If you use this repository or dataset in your research, please cite our paper:
 
 ```bibtex
-@article{gatekeeping_llm_bias_2026,
+@article{aldahoul2026gets,
   title={Who Gets Access? Global Region and Academic Status Bias in AI-Generated Academic Gatekeeping Scenarios},
-  author={Your Name and Co-authors},
-  journal={arXiv preprint},
+  author={Aldahoul, Nouar and Abdul Karim, Hezerul and Tan, Myles Joshua},
+  journal={Global Region and Academic Status Bias in AI-Generated Academic Gatekeeping Scenarios (January 05, 2026)},
   year={2026}
 }
 ```
