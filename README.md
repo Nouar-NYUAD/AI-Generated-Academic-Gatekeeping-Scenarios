@@ -1,11 +1,11 @@
-# Who Gets Access? Global Region and Academic Status Bias in AI-Generated Academic Gatekeeping Scenarios
+# Global North–South and Status Biases in AI-Generated Academic Gatekeeping Scenarios
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
 This repository contains the experiment dataset for the paper:
 
-> **Who Gets Access? Global Region and Academic Status Bias in AI-Generated Academic Gatekeeping Scenarios**
+> *Global North–South and Status Biases in AI-Generated Academic Gatekeeping Scenarios**
 
 ---
 
