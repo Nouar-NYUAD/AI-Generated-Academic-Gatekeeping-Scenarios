@@ -5,7 +5,7 @@
 
 This repository contains the experiment dataset for the paper:
 
-> *Global North–South and Status Biases in AI-Generated Academic Gatekeeping Scenarios**
+> **Global North–South and Status Biases in AI-Generated Academic Gatekeeping Scenarios**
 
 ---
 
