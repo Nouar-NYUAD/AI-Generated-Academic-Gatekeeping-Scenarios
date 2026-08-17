@@ -74,8 +74,8 @@ If you use this repository or dataset in your research, please cite our paper:
 ```bibtex
 @article{aldahoul2026gets,
   title={Who Gets Access? Global Region and Academic Status Bias in AI-Generated Academic Gatekeeping Scenarios},
-  author={Aldahoul, Nouar and Abdul Karim, Hezerul and Tan, Myles Joshua},
-  journal={Global Region and Academic Status Bias in AI-Generated Academic Gatekeeping Scenarios (January 05, 2026)},
+  author={AlDahoul, Nouar and Karim, Hezerul Abdul and Tan, Myles Joshua Toledo},
+  journal={arXiv preprint arXiv:2608.05178},
   year={2026}
 }
 ```
