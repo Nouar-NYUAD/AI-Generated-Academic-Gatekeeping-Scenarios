@@ -16,7 +16,7 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 ### Evaluated Models
 - **Meta:**  Llama 3.1-8B
 - **Google:** Gemini 2.5 Pro, Gemma-3n-2B
-- **Anthropic:** Claude Sonnet 3.
+- **Anthropic:** Claude Sonnet 4.6.
 - **OpenAI:** GPT-4o 
 
 ---
