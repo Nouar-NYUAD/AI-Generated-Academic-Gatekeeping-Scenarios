@@ -23,18 +23,14 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 
 ## 📂 Repository Structure
 
+```text
 .
-├── study1_origin_data.zip       # Study 1 (global region): selections between a Global North and a Global South
-│                                #   requester by each LLM (Claude, Gemini, Gemma, GPT, Llama), for each access
-│                                #   scenario, academic status, and option order (North→South / South→North).
-├── Academic_status_files.zip    # Study 2 (academic status): selections among an undergraduate student, PhD candidate,
-│                                #   postdoctoral researcher, and tenured professor by each LLM, for each access
-│                                #   scenario, country, and option ordering (runs 1–5).
-├── classify_country_files.zip   # Each LLM's classification of the countries as Global North or Global South.
+├── study1_origin_data.zip       # Study 1: Global North vs. Global South selections by each LLM
+├── Academic_status_files.zip    # Study 2: academic status selections by each LLM
+├── classify_country_files.zip   # Each LLM's Global North / Global South country classification
 ├── LICENSE
 └── README.md
-
----
+```
 
 ## 📊 Datasets
 
