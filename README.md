@@ -23,17 +23,16 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 
 ## 📂 Repository Structure
 
-```text
 .
-├── llama8b.zip               # LlaMa selection of countries belonging to Global South or Global North for each access scenario and academic status.
-│── gemma3.zip                # Gemma-3 selection of countries belonging to Global South or Global North for each access scenario and academic status.
-│── claude.zip                # Claude selection of countries belonging to Global South or Global North for each access scenario and academic status.    
-│── gemini.zip                # Gemini selection of countries belonging to Global South or Global North for each access scenario and academic status.
-│── gpt.zip                   # GPT selection of countries belonging to Global South or Global North for each access scenario and academic status.
-│── academic_status_files.zip       # LLMs selection of academic status for each access scenario and country.
-├── classify_country_files.zip      # Country classifications by LLMs into Global North vs. Global South by LLMs
+├── study1_origin_data.zip       # Study 1 (global region): selections between a Global North and a Global South
+│                                #   requester by each LLM (Claude, Gemini, Gemma, GPT, Llama), for each access
+│                                #   scenario, academic status, and option order (North→South / South→North).
+├── Academic_status_files.zip    # Study 2 (academic status): selections among an undergraduate student, PhD candidate,
+│                                #   postdoctoral researcher, and tenured professor by each LLM, for each access
+│                                #   scenario, country, and option ordering (runs 1–5).
+├── classify_country_files.zip   # Each LLM's classification of the countries as Global North or Global South.
+├── LICENSE
 └── README.md
-```
 
 ---
 
