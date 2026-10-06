@@ -28,7 +28,7 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 ├── study1_origin_data.zip       # Study 1: Global North vs. Global South selections by each LLM
 ├── Academic_status_files.zip    # Study 2: academic status selections by each LLM
 ├── classify_country_files.zip   # Each LLM's Global North / Global South country classification
-├── LICENSE
+├── gdp_per_capita_2023.csv      # 2023 GDP per capita (World Bank) used in the income analysis
 └── README.md
 ```
 
