@@ -15,7 +15,7 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 
 ### Evaluated Models
 - **Meta:**  Llama 3.1-8B
-- **Google:** Gemini 2.5 Pro, Gemma-3n-2B
+- **Google:** Gemini 2.5 Pro, Gemma-3n-E2B
 - **Anthropic:** Claude Sonnet 4.6.
 - **OpenAI:** GPT-4o 
 
@@ -43,7 +43,7 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 3. **Academic Status Selections**
     - Records of LLM selection choices across various academic seniorities (e.g.,  Tenured Professor, Postdoc Researcher, PhD candidate, Undergraduate Students).
   
-3. **Global Region Selections**
+4. **Global Region Selections**
     - Records of LLM selection choices across various countries belonging to Global South or Global North.
 
 ---
@@ -52,7 +52,7 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 
 ### Prerequisites
 
-Clone the repository and install required Python packages:
+Clone the repository:
 
 ```bash
 git clone https://github.com/Nouar-NYUAD/AI-Generated-Academic-Gatekeeping-Scenarios.git
