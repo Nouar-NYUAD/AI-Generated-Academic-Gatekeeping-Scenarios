@@ -30,8 +30,8 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 │── claude.zip                # Claude selection of countries belonging to Global South or Global North for each access scenario and academic status.    
 │── gemini.zip                # Gemini selection of countries belonging to Global South or Global North for each access scenario and academic status.
 │── gpt.zip                   # GPT selection of countries belonging to Global South or Global North for each access scenario and academic status.
-│── academic_status.zip       # LLMs selection of academic status for each access scenario and country.
-├── classify_country.zip      # Country classifications by LLMs into Global North vs. Global South by LLMs
+│── academic_status_files.zip       # LLMs selection of academic status for each access scenario and country.
+├── classify_country_files.zip      # Country classifications by LLMs into Global North vs. Global South by LLMs
 └── README.md
 ```
 
