@@ -1,11 +1,11 @@
-# Global North–South and Status Biases in AI-Generated Academic Gatekeeping Scenarios
+# Need or Reputation? Region, National Income, and Academic Status in LLM Gatekeeping Decisions
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
 This repository contains the experiment dataset for the paper:
 
-> **Global North–South and Status Biases in AI-Generated Academic Gatekeeping Scenarios**
+> **Need or Reputation? Region, National Income, and Academic Status in LLM Gatekeeping Decisions**
 
 ---
 
@@ -18,6 +18,7 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 - **Google:** Gemini 2.5 Pro, Gemma-3n-E2B
 - **Anthropic:** Claude Sonnet 4.6.
 - **OpenAI:** GPT-4o 
+- **TypeSafe:** Jev 1.13 decision model (separate paper; see below)
 
 ---
 
@@ -29,6 +30,7 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
 ├── Academic_status_files.zip    # Study 2: academic status selections by each LLM
 ├── classify_country_files.zip   # Each LLM's Global North / Global South country classification
 ├── gdp_per_capita_2023.csv      # 2023 GDP per capita (World Bank) used in the income analysis
+├── jev_gatekeeping_files.zip    # Jev decision model: decisions, probabilities, and country classifications
 └── README.md
 ```
 
@@ -45,6 +47,14 @@ As Large Language Models (LLMs) are increasingly integrated into administrative 
   
 4. **Global Region Selections**
     - Records of LLM selection choices across various countries belonging to Global South or Global North.
+
+5. **Jev Decision Model** (`jev_gatekeeping_files.zip`)
+    - Data for the paper *Generous with Papers, Guarded with Data: Auditing the Jev Decision Model in Academic Gatekeeping*, which repeats both studies with TypeSafe's Jev decision model (`typesafe/jev-1.13`, queried through OpenRouter's Decisions API in October 2026) using the same prompts, countries, academic statuses, and option orders.
+    - `study1_run1.csv`: Study 1, all 61,440 decisions (32 Global North × 80 Global South countries × 3 resources × 4 academic statuses × 2 option orders), with Jev's choice and its probability for each requester.
+    - `study1_run2.csv`, `study1_run3.csv`: two repetitions of 300 randomly drawn country pairs (7,200 decisions each), used to assess stability.
+    - `study2.csv`: Study 2, all 1,680 decisions (112 countries × 3 resources × 5 option orderings), with Jev's probability for each academic status.
+    - `classify.csv`: Jev's Global North / Global South classification of the 112 countries.
+    - `reasons_study1.csv`, `reasons_study2.csv`: the reasons experiment, in which Jev also chose the main reason for each decision from nine fixed options (Study 1: 100 country pairs spanning the income gap × 3 resources × 4 statuses, 1,200 decisions; Study 2: 40 countries spanning GDP per capita × 3 resources, 120 decisions), with its probability for each reason.
 
 ---
 
@@ -67,8 +77,8 @@ cd AI-Generated-Academic-Gatekeeping-Scenarios
 If you use this repository or dataset in your research, please cite our paper:
 
 ```bibtex
-@article{aldahoul2026gets,
-  title={Who Gets Access? Global Region and Academic Status Bias in AI-Generated Academic Gatekeeping Scenarios},
+@article{aldahoul2026need,
+  title={Need or Reputation? {Region}, National Income, and Academic Status in {LLM} Gatekeeping Decisions},
   author={AlDahoul, Nouar and Karim, Hezerul Abdul and Tan, Myles Joshua Toledo},
   journal={arXiv preprint arXiv:2608.05178},
   year={2026}
