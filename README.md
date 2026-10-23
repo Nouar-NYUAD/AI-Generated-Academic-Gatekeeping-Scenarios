@@ -1,4 +1,5 @@
 # Need or Reputation? Region, National Income, and Academic Status in LLM Gatekeeping Decisions
+# Generous with Papers, Guarded with Data: Auditing the Jev Decision Model in Academic Gatekeeping
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -6,19 +7,20 @@
 This repository contains the experiment dataset for the paper:
 
 > **Need or Reputation? Region, National Income, and Academic Status in LLM Gatekeeping Decisions**
+> **Generous with Papers, Guarded with Data: Auditing the Jev Decision Model in Academic Gatekeeping**
 
 ---
 
 ## 📌 Overview
 
-As Large Language Models (LLMs) are increasingly integrated into administrative and evaluative workflows, understanding their decision-making biases in academic gatekeeping scenarios (CVs sharing, Paywalled Articles, nonpublic Data) is critical. This study investigates whether popular open-weight and proprietary LLMs exhibit systemic biases based on **geographic region** (Global North vs. Global South) and **academic status** (e.g., Tenured Professor, Postdoc Researcher, PhD candidate, Undergraduate Students) when making resource access and gatekeeping choices.
+As Large Language Models (LLMs) and Decision Models (DMs) are increasingly integrated into administrative and evaluative workflows, understanding their decision-making biases in academic gatekeeping scenarios (CVs sharing, Paywalled Articles, nonpublic Data) is critical. This study investigates whether popular open-weight LLMs, proprietary LLMs, or DMs exhibit systemic biases based on **geographic region** (Global North vs. Global South) and **academic status** (e.g., Tenured Professor, Postdoc Researcher, PhD candidate, Undergraduate Students) when making resource access and gatekeeping choices.
 
 ### Evaluated Models
 - **Meta:**  Llama 3.1-8B
 - **Google:** Gemini 2.5 Pro, Gemma-3n-E2B
 - **Anthropic:** Claude Sonnet 4.6.
 - **OpenAI:** GPT-4o 
-- **TypeSafe:** Jev 1.13 decision model (separate paper; see below)
+- **TypeSafe:** Jev 1.13 decision model
 
 ---
 
