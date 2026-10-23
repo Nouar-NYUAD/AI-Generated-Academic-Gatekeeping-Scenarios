@@ -4,9 +4,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
-This repository contains the experiment dataset for the paper:
+This repository contains the experiment dataset for the two papers:
 
 > ** 1) Need or Reputation? Region, National Income, and Academic Status in LLM Gatekeeping Decisions
+> 
      2) Generous with Papers, Guarded with Data: Auditing the Jev Decision Model in Academic Gatekeeping**
 
 ---
