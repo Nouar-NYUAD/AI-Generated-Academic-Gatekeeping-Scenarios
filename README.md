@@ -6,8 +6,7 @@
 
 This repository contains the experiment dataset for the two papers:
 
-> ** 1) Need or Reputation? Region, National Income, and Academic Status in LLM Gatekeeping Decisions
->    2) Generous with Papers, Guarded with Data: Auditing the Jev Decision Model in Academic Gatekeeping**
+> ** 1) Need or Reputation? Region, National Income, and Academic Status in LLM Gatekeeping Decisions 2) Generous with Papers, Guarded with Data: Auditing the Jev Decision Model in Academic Gatekeeping**
 ---
 
 ## 📌 Overview
